@@ -1,8 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[4]:
-
+#Simple Optimization Example 
 
 #Wesley Hinchman EVE 310
 #Lecture #23: Linear Optimization with Python
