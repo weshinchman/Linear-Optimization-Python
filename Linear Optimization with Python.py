@@ -1,14 +1,12 @@
 #Simple Optimization Example 
-
 #Wesley Hinchman EVE 310
 #Lecture #23: Linear Optimization with Python
+
 
 #Import packages
 import numpy as np
 from scipy.optimize import linprog
 
-
-# In[17]:
 
 
 #Establish sample arrays and define
@@ -18,8 +16,6 @@ b_ineq = np.array([6000,-1500])
 bnd = np.array([(0,10000),(0,20000)])
 res = linprog(c, A_ub= A_ineq, b_ub=b_ineq, bounds=bnd)
 
-
-# In[18]:
 
 
 #Print results
@@ -31,7 +27,6 @@ print('Optimal Solution ={:}'.format(res.x))
 print('Slack = {:}'.format(res.slack))
 
 
-# In[ ]:
 
 
 
